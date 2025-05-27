@@ -60,4 +60,8 @@ export default class LinkedinPage extends BasePage {
     await this.page.locator('#shopping_cart_container a').click();
     await this.page.locator('[data-test="checkout"]').click();
   }
+
+  async validarLogin(): Promise<void>{
+    
+  }
 }

@@ -15,7 +15,7 @@ test.describe('Sauce Demo', () => {
     await page.goto(BASE_URL);
   });
 
-  test('Validação do carrinho', async () => {
-    await linkedinPage.validarCarrinho();
+  test('Validação do Login', async () => {
+    await linkedinPage.validarLogin();
   });
 });

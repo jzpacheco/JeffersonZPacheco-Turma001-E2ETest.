@@ -7,6 +7,28 @@ export default class LinkedinElements extends BaseElements {
     this.page = page;
   }
 
+  getBotaoEntrar(): Locator {
+    return this.page.locator('a[href="https://www.linkedin.com/login/pt"]');
+  }
+
+  getCampoUsuario(): Locator {
+    return this.page.locator('#username');
+  }
+  getCampoSenha(): Locator {
+    return this.page.locator('#password');
+  }
+  getBotaoEntrarLinkedin(): Locator {
+    return this.page.locator('button[type="submit"]');
+  }
+
+  getBotaoProfile(): Locator {
+    return this.page.locator('#ember15');
+  }
+
+
+
+
+
   getBotaoNovoCadastro(): Locator {
     return this.page.locator('text=Cadastre-se para fazer entregas');
   }
